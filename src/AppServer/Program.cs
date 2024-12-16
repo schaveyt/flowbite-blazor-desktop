@@ -22,6 +22,8 @@ class Program
         // customize window
         app.MainWindow
             .SetIconFile("favicon.ico")
+            .SetHeight(1080)
+            .SetWidth(1920)
             .SetTitle("Flowbite Blazor Desktop");
 
         AppDomain.CurrentDomain.UnhandledException += (sender, error) =>

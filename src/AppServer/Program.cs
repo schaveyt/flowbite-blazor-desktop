@@ -3,7 +3,7 @@
 using System.Net.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Photino.Blazor;
-using AppServer.Components;
+using AppServer;
 
 class Program
 {

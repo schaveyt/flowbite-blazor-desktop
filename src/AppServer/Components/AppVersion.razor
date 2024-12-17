@@ -1,0 +1,16 @@
+@inherits UiComponentBase
+@using System.Reflection
+
+<span class=@ClassNames(Class)>@_appVersion</span>
+
+@code
+{
+    private string _appVersion = "";
+
+    protected override void OnInitialized()
+    {
+        var assembly = Assembly.GetExecutingAssembly();
+        var applicationVersion = assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion;
+        _appVersion = applicationVersion ?? "UNDEFINED";
+    }
+}

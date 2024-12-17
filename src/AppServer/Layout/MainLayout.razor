@@ -1,0 +1,41 @@
+@inherits Flowbite.Layout.MainLayout
+
+
+<SectionContent SectionName="header-content-left-outlet">
+    <!-- Application Title -->
+    <a class="flex items-center ml-2" data-enhance-nav="false">
+        <a href="/" class="self-center text-2xl font-semibold whitespace-nowrap text-black dark:text-white">AppTitle</a>
+    </a>
+</SectionContent>
+
+<SectionContent SectionName="header-content-center-outlet">    
+</SectionContent>
+
+<SectionContent SectionName="header-content-right-outlet">
+    <DarkMode class="mr-1"/>
+</SectionContent>
+
+<SectionContent SectionName="sidebar-content-outlet">
+    <Sidebar/>
+</SectionContent>
+
+<SectionContent SectionName="footer-content-left-outlet">
+</SectionContent>
+
+<SectionContent SectionName="footer-content-center-outlet">    
+</SectionContent>
+
+<SectionContent SectionName="footer-content-right-outlet">
+    <p>v1.0</p>
+</SectionContent>
+
+@{
+  // Display the base layout that we are inheriting from.
+  base.BuildRenderTree(__builder);
+}
+
+
+
+
+
+

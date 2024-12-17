@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-      "./**/*.{razor,html,cshtml}",
+      "./Components/**/*.{razor,html,cshtml}",
+      "./Layout/**/*.{razor,html,cshtml}",
+      "./Pages/**/*.{razor,html,cshtml}",
       "../Flowbite/**/*.{razor,html,cshtml}",
+      "./node_modules/flowbite/**/*.js"
   ],
   darkMode: 'class',
   theme: {

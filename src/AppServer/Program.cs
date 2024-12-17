@@ -1,5 +1,4 @@
-
-﻿using System;
+using System;
 using System.Net.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Photino.Blazor;
@@ -15,7 +14,7 @@ class Program
         appBuilder.Services.AddLogging();
 
         // register root component and selector
-        appBuilder.RootComponents.Add<App>("app");
+        appBuilder.RootComponents.Add<AppServer.App>("app");
 
         var app = appBuilder.Build();
 
@@ -32,6 +31,5 @@ class Program
         };
 
         app.Run();
-
     }
 }
